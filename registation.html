@@ -1,0 +1,75 @@
+<html>
+    <head>
+        <title></title>
+    </head>
+    <style>
+        body{
+            background-image: url(image/background.jpg);
+            color: white;
+            background-repeat: no-repeat;
+            display: flex;
+            background-size: cover;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+
+        }
+        .reg-form {
+            background-color: rgba(255, 255, 255, 0.13);
+            padding: 20px;
+            border-radius: 8px;
+            width: 300px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        .reg-form h1 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .reg-form label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        .reg-form input[type="text"],
+        .reg-form input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 16px;
+        }
+        .reg-form input[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        .reg-form input[type="submit"]:hover {
+            background-color: #0eff22;
+        }
+    </style>
+    <body>
+        <div class="reg-form">
+            <h1>Registration Form</h1>
+            <form>
+                <label for="fname">First Name</label>
+                <input type="text" id="fname" name="fname" required>
+
+                <label for="lname">Last Name</label>
+                <input type="text" id="lname" name="lname" required>
+
+                <label for="username">Username</label>
+                <input type="text" id="username" name="username" required>
+    
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" required>
+    
+                <input type="submit" value="Register">
+            </form>
+        </div>
+    </body>
+</html>
